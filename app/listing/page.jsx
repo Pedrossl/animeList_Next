@@ -16,11 +16,10 @@ export default function Listing() {
         getAnimes()
     }, [])
 
-    const listAnime = animes.map((anime) => {
-        <AnimeList key = {anime.id} anime = {anime} />
-    }
-    )
-    
+    const listAnime = animes.map((anime) => (
+      <AnimeList key={anime.id} anime={anime} />
+  ));
+  
     
     
     
@@ -52,6 +51,7 @@ export default function Listing() {
       </th>
     </tr>
   </thead>
+  <tbody>{listAnime}</tbody>
 </table>
     )
     }
