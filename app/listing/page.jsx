@@ -1,10 +1,11 @@
 'use client'
 import { useEffect, useState } from "react"
 import 'bootstrap-icons/font/bootstrap-icons.css';
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation"
 import AnimeList from "../components/AnimeList";
 export default function Listing() {
     const [animes, setAnimes] = useState([])
+    const router = useRouter()
 
     //const router = useRouter()
     useEffect(() => {
@@ -25,13 +26,13 @@ export default function Listing() {
     
 
     const listAnime = animes.map((anime) => (
-      <AnimeList key={anime.id} anime={anime} 
+      <AnimeList key={anime.id} 
+      anime={anime} 
       delete={() => deleteAn(anime.id)}
+      alter={() => router.push("alter/"+anime.id)}
       />
   ));
   
-    
-    
     
     
     return (

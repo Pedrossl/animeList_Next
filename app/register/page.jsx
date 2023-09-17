@@ -34,7 +34,7 @@ const Cadastro = () => {
       <form onSubmit={handleSubmit(enviaDados)}>
         <div className="mb-4">
           <label htmlFor="nome" className="block text-gray-800 text-sm font-bold mb-2">Nome</label>
-          <input type="text" id="nome" {...register('nome')} className="border rounded w-full py-2 px-3 text-orange-500" required />
+          <input type="text" id="titulo" {...register('titulo')} className="border rounded w-full py-2 px-3 text-orange-500" required />
         </div>
 
         <div className="mb-4">
