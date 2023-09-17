@@ -21,7 +21,7 @@ export default function Listing() {
       async function getGeneros() {
         const response = await fetch("http://localhost:3004/generos")
         const dados = await response.json()
-        setGeneros(dados)
+        getGeneros(dados)
       }
       getGeneros()
     }

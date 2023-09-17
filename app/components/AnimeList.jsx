@@ -50,10 +50,10 @@ export default function AnimeList(props) {
                 <div className="text-gray-900">{props.anime.nota}</div>
             </td>
             <td className="py-3 px-4">
-          <i class="bi bi-pencil-square hover:bg-laranja text-gray-900 mr-2 cursor-pointer"></i>
+          <i class="bi bi-pencil-square hover:bg-laranja text-gray-900 mr-2 cursor-pointer" onClick={props.alter} title='alter'></i>
           <i class="bi bi-calendar2-x hover:bg-laranja text-gray-900 cursor-pointer mr-2" onClick={()=>deleteAnimes(props.anime.id)}
           title='Delete'></i>
-          <i class="bi bi-star hover:bg-laranja text-gray-900 cursor-pointer" onClick={props.alter} title='alter'></i>
+          <i class="bi bi-star hover:bg-laranja text-gray-900 cursor-pointer" ></i>
             </td>
         </tr>
     );
