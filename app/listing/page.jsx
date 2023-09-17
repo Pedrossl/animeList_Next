@@ -17,6 +17,16 @@ export default function Listing() {
         getAnimes()
     }, [])
 
+    useEffect(() => {
+      async function getGeneros() {
+        const response = await fetch("http://localhost:3004/generos")
+        const dados = await response.json()
+        setGeneros(dados)
+      }
+      getGeneros()
+    }
+    , [])
+
     async function deleteAn(id) {
         const response = await fetch(`http://localhost:3004/animes/${id}`, {
             method: 'DELETE'
