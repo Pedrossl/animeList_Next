@@ -1,4 +1,4 @@
-import Form from "./components/Form";
+
 import Title from "./components/Title";
 import "./globals.css";
 
