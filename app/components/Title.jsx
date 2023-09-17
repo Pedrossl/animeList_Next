@@ -14,7 +14,7 @@ export default function Title({ children }) {
           </Link>
         </div>
         <div className="text-right">
-        <Link href="#" className="text-gray-200 text-2xl hover:text-laranja mr-4 ">
+        <Link href="" className="text-gray-200 text-2xl hover:text-laranja mr-4 ">
           <i class="bi bi-search-heart"></i>
           </Link>
         <Link href="/listing" className="text-gray-200 text-2xl hover:text-laranja mr-4">
