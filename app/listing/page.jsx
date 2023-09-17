@@ -16,8 +16,18 @@ export default function Listing() {
         getAnimes()
     }, [])
 
+    async function deleteAn(id) {
+        const response = await fetch(`http://localhost:3004/animes/${id}`, {
+            method: 'DELETE'
+        })
+        setAnimes(animes.filter(anime => anime.id !== id))
+    }
+    
+
     const listAnime = animes.map((anime) => (
-      <AnimeList key={anime.id} anime={anime} />
+      <AnimeList key={anime.id} anime={anime} 
+      delete={() => deleteAn(anime.id)}
+      />
   ));
   
     
@@ -48,6 +58,9 @@ export default function Listing() {
       </th>
       <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
         Nota
+      </th>
+      <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+        Ações
       </th>
     </tr>
   </thead>
