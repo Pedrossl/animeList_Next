@@ -40,6 +40,7 @@ export default function Listing() {
       anime={anime} 
       delete={() => deleteAn(anime.id)}
       alter={() => router.push("alter/"+anime.id)}
+      alterNote={() => router.push("alterNote/"+anime.id)}
       />
   ));
   

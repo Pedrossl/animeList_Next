@@ -47,7 +47,9 @@ export default function AnimeList(props) {
                 <div className="text-gray-900">{props.anime.episodios}</div>
             </td>
             <td className="py-3 px-4">
-                <div className="text-gray-900">{props.anime.nota}</div>
+           
+                <div className="text-gray-900">{props.anime.nota}
+                <i class="bi bi-balloon-heart cursor-pointer" onClick={props.alterNote}></i> </div>
             </td>
             <td className="py-3 px-4">
           <i class="bi bi-pencil-square hover:bg-laranja text-gray-900 mr-2 cursor-pointer" onClick={props.alter} title='alter'></i>
