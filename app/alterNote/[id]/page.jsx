@@ -20,7 +20,7 @@ const AlteracaoNota = () => {
           if (response.ok) {
             const animeData = await response.json();
             setAnime(animeData);
-            setNota(animeData.nota);  // Atualize a nota ao carregar o anime
+            setNota(animeData.nota);  
           } else {
             toast.error('Erro ao carregar detalhes do anime.');
           }
