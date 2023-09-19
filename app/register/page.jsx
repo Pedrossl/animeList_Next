@@ -115,16 +115,16 @@ const Cadastro = () => {
         </button>
       </form>
       <ToastContainer
-        position="top-right"
+        position="bottom-center"
         autoClose={5000}
-        hideProgressBar={false}
-        newestOnTop={false}
+        hideProgressBar
+        newestOnTop
         closeOnClick
         rtl={false}
         pauseOnFocusLoss
         draggable
         pauseOnHover
-        theme="light"
+        theme="dark"
       />
     </div>
   );

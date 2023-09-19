@@ -41,9 +41,9 @@ const Alteracao = () => {
     },
   )
   if (anime.status == 200) {
-    toast.success("Filme alterado com sucesso!")
+    toast.success("Alterado com sucesso!")
   } else {
-    toast.error("Erro ao alterar filme!")
+    toast.error("Erro ao fazer alteração!")
   }
   };
 
@@ -97,16 +97,16 @@ const Alteracao = () => {
       )}
 
       <ToastContainer
-        position="top-center"
-        autoClose={5000}
-        hideProgressBar={false}
-        newestOnTop={false}
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-        theme="light"
+      position="bottom-center"
+      autoClose={5000}
+      hideProgressBar
+      newestOnTop
+      closeOnClick
+      rtl={false}
+      pauseOnFocusLoss
+      draggable
+      pauseOnHover
+      theme="dark"
       />
     </div>
   );

@@ -4,20 +4,20 @@ import Swal from 'sweetalert2';
 export default function AnimeList(props) {
     function deleteAnimes (id){
             Swal.fire({
-        title: 'Are you sure?',
-        text: "You won't be able to revert this!",
+        title: 'Tem certeza que deseja excluir?',
+        text: "Essa ação não poderá ser revertida!",
         icon: 'warning',
         showCancelButton: true,
         confirmButtonColor: '#3085d6',
         cancelButtonColor: '#d33',
-        confirmButtonText: 'Yes, delete it!'
+        confirmButtonText: 'Excluir!'
       }).then((result) => {
         if (result.isConfirmed) {
           props.delete(id)
           Swal.fire(
-            'Deleted!',
-            'Your file has been deleted.',
-            'success'
+            'Concluído',
+            'Esse anime foi deletado com sucesso',
+            'Sucess'
           )
         }
       })
