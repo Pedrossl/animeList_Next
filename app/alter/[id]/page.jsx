@@ -87,7 +87,7 @@ const Alteracao = () => {
               id="titulo"
               {...register("titulo")}
               className="border rounded text-orange-500 w-full py-2 px-3"
-              defaultValue={anime.nome}
+              defaultValue={anime.titulo}
               required
             />
           </div>
