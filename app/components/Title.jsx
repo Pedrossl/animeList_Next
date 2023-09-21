@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Title({ children }) {
   return (
-    <body>
+    <body class="pagina-especifica">
       <header className="flex justify-between items-center bg-fundo py-2 px-6">
         <div className="flex items-center">
           <img src="../logo.png" className="w-14 h-14 rounded-full" />

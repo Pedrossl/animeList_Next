@@ -25,7 +25,7 @@ export default function AnimeList(props) {
     }
 
     return (
-        <tr className="bg-purple-200 hover:bg-purple-300 transition-all ">
+        <tr className="bg-gelo hover:bg-cinza200 transition-all ">
             <td className="py-3 px-4">
                 <div className="w-20 h-20 bg-gray-300 rounded-full overflow-hidden">
                     <img src={props.anime.capa} alt="" className="w-full h-full object-cover" />

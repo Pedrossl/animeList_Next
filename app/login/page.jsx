@@ -3,8 +3,8 @@ import React from "react";
 
 const Login = () => {
   return (
-    <div className="min-h-screen flex flex-col items-center  bg-black mt-20">
-      <div className="bg-white p-8 rounded-lg shadow-lg">
+    <div className="min-h-screen flex flex-col items-center  bg-fundo2 mt-20">
+      <div className="bg-gelo p-8 rounded-lg shadow-lg">
         <h2 className="text-2xl font-bold mb-4 text-orange-800">Login</h2>
         <form>
           <div className="mb-4">

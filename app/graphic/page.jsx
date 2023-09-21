@@ -35,7 +35,7 @@ export default function AnimeChart() {
   }, []);
 
   return (
-    <div className="mt-10 p-6 bg-white rounded-lg shadow-lg">
+    <div className="mt-10 p-6 bg-gelo rounded-lg shadow-lg">
       <div className="text-center mb-6">
         <h1 className="font-bold text-gray-800 text-2xl">
           Gráfico de Animes por Nota
