@@ -39,7 +39,7 @@ export default function Login () {
           </div>
           <button
             type="submit"
-            className="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded mr-3"
+            className="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded mr-8"
           >
             <Link href="/">Login</Link>
           </button>
