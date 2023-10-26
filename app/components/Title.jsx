@@ -13,7 +13,7 @@ export default function Title({ children }) {
           </Link>
         </div>
 
-        <div className="flex items-center">
+        <div className="flex items-center gap-5">
 
           <Link
             href="/listing"
@@ -22,7 +22,7 @@ export default function Title({ children }) {
             <i className="bi bi-collection-play"></i>
           </Link>
           <Link
-            href="/register"
+            href="/registerAnime"
             className="text-gray-200 text-2xl hover:text-laranja ml-4"
           >
             <i className="bi bi-postcard-heart"></i>
@@ -35,9 +35,14 @@ export default function Title({ children }) {
           </Link>
           <Link
             href="/login"
-            className="text-gray-200 text-2xl hover:text-laranja ml-4"
+            className="text-gray-200 hover:text-laranja ml-4"
           >
-            <i className="bi bi-person-circle"></i>
+            <div className="flex flex-col items-center">
+            <i className="bi bi-person-circle text-2xl mt-5 mb-0 "></i>
+            <p className="text-x">User</p>
+            </div>
+            
+              
           </Link>
         </div>
       </header>
