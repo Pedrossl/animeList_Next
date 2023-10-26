@@ -1,7 +1,9 @@
 import Link from "next/link";
 import React from "react";
+import { FcGoogle } from 'react-icons/fc';
 
-export default Login = () => {
+
+export default function Login () {
   return (
     <div className="min-h-screen flex flex-col items-center  bg-fundo2 mt-20">
       <div className="bg-gelo p-8 rounded-lg shadow-lg">
@@ -44,7 +46,13 @@ export default Login = () => {
           <a href="#" className="text-orange-500 hover:underline">
             Esqueci minha senha
           </a>
+          <p className="flex justify-center pt-4 text-orange-700 hover:text-orange-400"><a href="">Cadastre-se gratis</a></p>
         </form>
+        <div className="flex justify-center pt-4">
+        <FcGoogle
+        size={35}
+        />
+        </div>
       </div>
     </div>
   );
