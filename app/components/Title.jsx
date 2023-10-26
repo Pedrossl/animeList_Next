@@ -14,17 +14,7 @@ export default function Title({ children }) {
         </div>
 
         <div className="flex items-center">
-          {/**   <div className="search-bar rounded-full flex items-center mr-4">
-            <input
-              type="text"
-              placeholder="Pesquisar"
-              className="px-2 py-1 rounded-full"
-            />
-          </div>
-          <Link href="" className="text-gray-200 text-2xl hover:text-laranja">
-            <i className="bi bi-search-heart"></i>
-          </Link>
-*/}
+
           <Link
             href="/listing"
             className="text-gray-200 text-2xl hover:text-laranja ml-4"

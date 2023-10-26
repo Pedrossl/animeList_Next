@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 
-const Login = () => {
+export default Login = () => {
   return (
     <div className="min-h-screen flex flex-col items-center  bg-fundo2 mt-20">
       <div className="bg-gelo p-8 rounded-lg shadow-lg">
@@ -49,5 +49,3 @@ const Login = () => {
     </div>
   );
 };
-
-export default Login;
