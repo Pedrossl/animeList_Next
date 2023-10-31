@@ -37,7 +37,7 @@ export default function Title({ children }) {
             href="/login"
             className="text-gray-200 hover:text-laranja ml-4"
           >
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center ml-7">
             <i className="bi bi-person-circle text-2xl mt-5 mb-0 "></i>
             <p className="text-x">User</p>
             </div>
