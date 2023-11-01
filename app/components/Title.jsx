@@ -19,23 +19,24 @@ export default function Title({ children }) {
             href="/listing"
             className="text-gray-200 text-2xl hover:text-laranja ml-4"
           >
-            <i className="bi bi-collection-play"></i>
+            <i className="bi bi-collection-play" title="Lista de animes"></i>
           </Link>
           <Link
             href="/registerAnime"
             className="text-gray-200 text-2xl hover:text-laranja ml-4"
           >
-            <i className="bi bi-postcard-heart"></i>
+            <i className="bi bi-postcard-heart" title="Cadastrar animes"></i>
           </Link>
           <Link
             href="/graphic"
             className="text-gray-200 text-2xl hover:text-laranja ml-4"
           >
-            <i className="bi bi-buildings"></i>
+            <i className="bi bi-buildings" title="Graficos"></i>
           </Link>
           <Link
             href="/login"
             className="text-gray-200 hover:text-laranja ml-4"
+            title="Login"
           >
             <div className="flex flex-col items-center ml-7">
             <i className="bi bi-person-circle text-2xl mt-5 mb-0 "></i>
