@@ -31,7 +31,7 @@ export default function Title({ children }) {
             href="/graphic"
             className="text-gray-200 text-2xl hover:text-laranja ml-4"
           >
-            <i class="bi bi-buildings"></i>
+            <i className="bi bi-buildings"></i>
           </Link>
           <Link
             href="/login"

@@ -1,6 +1,7 @@
-import "bootstrap-icons/font/bootstrap-icons.css";
+import CardAnimes from "./components/CardAnimes";
 export default function Home() {
   return (
+    <section>
     <div className="relative flex">
       <div>
         <img src="./jujutsu.png" alt="jujutsu" className="min-h-screen" />
@@ -25,5 +26,9 @@ export default function Home() {
         </div>
       </div>
     </div>
+    <CardAnimes/>
+    </section>
+          
+
   );
 }
